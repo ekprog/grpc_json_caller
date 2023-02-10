@@ -5,6 +5,10 @@ Very simple wrapper for call gRPC methods at runtime with only loading .proto fi
 \
 Also suitable for routing HTTP REST requests to gRPC (for example, Gateway API).
 
+- Dynamic routing
+- Reflection in gRPC call
+- Json Schema for calling gRPC method
+
 ### Installation
 
 ```shell
