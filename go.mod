@@ -1,4 +1,4 @@
-module grpc-runtime-json-caller
+module github.com/ekprog/grpc-runtime-json-caller
 
 go 1.19
 
