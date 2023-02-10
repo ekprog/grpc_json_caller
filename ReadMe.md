@@ -9,7 +9,7 @@ Also suitable for routing HTTP REST requests to gRPC (for example, Gateway API).
 \
 Your Proto file from gRPC server (or some files)
 
-```
+```protobuf
 service TestService {
   rpc Test (TestRequest) returns (TestResponse) {}
 }
@@ -26,7 +26,7 @@ message TestResponse {
 \
 Parsing proto and setup service with client
 
-```
+```go
 // Make registry and parsing proto
 // .proto - source dir with is root for imports from proto files
 registry := NewRegistry()
@@ -42,7 +42,7 @@ service.CreateClient("localhost:8086")
 ```
 \
 Call using structs
-```
+```go
 type TestRequest struct {
 	Name string
 }
@@ -62,7 +62,7 @@ func main() {
 
 \
 Call using JSON
-```
+```go
 func main() {
     // ... init steps
     
@@ -76,7 +76,7 @@ func main() {
 ### Documentation
 
 
-```
+```go
 // Make registry
 registry := NewRegistry()
 registry.Reload("./proto", "./test_service.proto")
