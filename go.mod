@@ -1,4 +1,4 @@
-module github.com/ekprog/grpc_caller
+module github.com/ekprog/grpc_json_caller
 
 go 1.19
 

@@ -17,7 +17,7 @@ go get github.com/ekprog/grpc-json-caller
 
 ```go
 import (
-	grpcCaller "github.com/ekprog/grpc-json-caller"
+	grpcCaller "github.com/ekprog/grpc_json_caller"
 )
 ```
 

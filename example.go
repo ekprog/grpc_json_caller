@@ -1,4 +1,4 @@
-package grpc_caller
+package grpc_json_caller
 
 import (
 	"log"
