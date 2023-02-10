@@ -16,7 +16,6 @@ import (
 	"os"
 	"os/exec"
 	"path"
-	"path/filepath"
 )
 
 type Registry struct {
@@ -71,8 +70,8 @@ func (r *Registry) Reload(srcDir, filename string) error {
 		return err
 	}
 
-	_, nameOnly := filepath.Split(r.filename)
-	desc, err := registry.FindFileByPath(nameOnly)
+	//_, nameOnly := filepath.Split(r.filename)
+	desc, err := registry.FindFileByPath(r.filename)
 	if err != nil {
 		return err
 	}
