@@ -1,4 +1,4 @@
-package main
+package grpc_caller
 
 import (
 	"log"
@@ -12,7 +12,7 @@ type TestResponse struct {
 	Greetings string
 }
 
-func main() {
+func example() {
 
 	// Make registry
 	registry := NewRegistry()
