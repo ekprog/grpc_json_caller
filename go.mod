@@ -1,4 +1,4 @@
-module grpc-dynamic-invoker
+module grpc-runtime-json-caller
 
 go 1.19
 
