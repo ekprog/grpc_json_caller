@@ -5,6 +5,18 @@ Very simple wrapper for call gRPC methods at runtime with only loading .proto fi
 \
 Also suitable for routing HTTP REST requests to gRPC (for example, Gateway API).
 
+### Installation
+
+```shell
+go get github.com/ekprog/grpc-json-caller
+```
+
+```go
+import (
+	grpcCaller "github.com/ekprog/grpc-json-caller"
+)
+```
+
 ### Examples
 \
 Your Proto file from gRPC server (or some files)
