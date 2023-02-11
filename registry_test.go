@@ -11,6 +11,14 @@ import (
 	"testing"
 )
 
+type TestRequest struct {
+	Name string
+}
+
+type TestResponse struct {
+	Greetings string
+}
+
 func makeGRPCServer(addr string) *grpc.Server {
 	grpcServer := grpc.NewServer()
 	lis, err := net.Listen("tcp", addr)
