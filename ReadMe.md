@@ -135,3 +135,17 @@ service.Call("Test", req, res)
 // Call with object WithContext
 service.CallWithContext("Test", req, res)
 ```
+
+
+### Testing
+
+For making tests you should generate server gRPC files
+
+```shell
+protoc -I ./proto \
+--go_out ./proto \
+--go_opt paths=source_relative \
+--go-grpc_out ./proto \
+--go-grpc_opt paths=source_relative \
+./proto/test_service.proto
+```

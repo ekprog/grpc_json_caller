@@ -16,6 +16,7 @@ import (
 	"os"
 	"os/exec"
 	"path"
+	"strings"
 )
 
 type Registry struct {
@@ -31,6 +32,9 @@ func NewRegistry() *Registry {
 }
 
 func (r *Registry) Reload(srcDir, filename string) error {
+
+	srcDir = strings.TrimPrefix(srcDir, "./")
+	filename = strings.TrimPrefix(filename, "./")
 
 	r.srcDir = srcDir
 	r.filename = filename
